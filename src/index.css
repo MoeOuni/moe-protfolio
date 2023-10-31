@@ -1,0 +1,41 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.nav {
+  width: 750px;
+}
+
+.ant-image-mask {
+  border-radius: 2rem !important;
+}
+
+@media screen and (max-width: 1220px) {
+  .nav {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 997px) {
+  .nav {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 797px) {
+  .nav {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .nav {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .nav {
+    width: 278px;
+  }
+}
