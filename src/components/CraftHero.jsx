@@ -1,4 +1,3 @@
-import React from "react";
 import craftThemes from "../assets/craft-themes.png";
 import { Button } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,10 +16,10 @@ const CraftHero = () => {
               Discover Craft
             </h1>
             <p className="lead">
-              Celebrate the art of web development with my 'Discover Craft'
-              page. Explore a visual timeline of my MERN Stack journey,
-              featuring captivating projects that showcase my passion for
-              creating exceptional digital experiences.
+              Celebrate the art of web development with my &lsquo;Discover
+              Craft&rsquo; page. Explore a visual timeline of my MERN Stack
+              journey, featuring captivating projects that showcase my passion
+              for creating exceptional digital experiences.
             </p>
             <div>
               <Button

@@ -1,4 +1,4 @@
-import { Avatar } from "antd";
+import PropTypes from "prop-types";
 
 const SkillCard = ({ image, name }) => {
   return (
@@ -7,6 +7,11 @@ const SkillCard = ({ image, name }) => {
       <span className="fw-bold ">{name}</span>
     </div>
   );
+};
+
+SkillCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default SkillCard;

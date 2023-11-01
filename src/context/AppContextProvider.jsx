@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import AppContext from "./AppContext";
 
+// eslint-disable-next-line react/prop-types
 const AppContextProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
   const [language, setLanguage] = useState("english");

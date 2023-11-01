@@ -1,12 +1,22 @@
 import { Menu, Layout } from "antd";
-import React from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import LayoutFooter from "../components/LayoutFooter";
+import { useEffect, useState } from "react";
 
 const { Header } = Layout;
 
 const Main = () => {
   const Navigate = useNavigate();
+
+  const location = useLocation();
+  const [selectedLocation, setSelectedLocation] = useState(
+    location.pathname || "/"
+  );
+
+  useEffect(() => {
+    setSelectedLocation(location.pathname);
+  }, [location]);
+
   return (
     <div>
       <Header
@@ -32,6 +42,7 @@ const Main = () => {
 
         <div>
           <Menu
+            selectedKeys={[selectedLocation]}
             className="nav d-flex justify-content-center align-items-center"
             items={[
               {

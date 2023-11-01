@@ -1,4 +1,3 @@
-import React from "react";
 import "../assets/index.less";
 import Footer from "rc-footer";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";

@@ -8,8 +8,7 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Avatar, Badge, Button, Image, Space } from "antd";
-import React from "react";
+import { Badge, Button, Image, Space } from "antd";
 
 const MainHero = () => {
   return (
@@ -30,7 +29,7 @@ const MainHero = () => {
           </h1>
           <div>
             <p className="mb-4">
-              I'm a 🚀 MERN Stack Web Developer (MongoDB, Express, React,
+              I&apos;m a 🚀 MERN Stack Web Developer (MongoDB, Express, React,
               Node.js) with a focus on creating exceptional digital experiences
               that are fast, accessible, visually appealing, and responsive.
             </p>
@@ -71,6 +70,7 @@ const MainHero = () => {
               <a
                 href="https://github.com/MoeOuni"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-decoration-none"
                 style={{ color: "#1E3050" }}
               >
@@ -84,6 +84,7 @@ const MainHero = () => {
                 href="https://www.linkedin.com/in/amine-ouni-1464b1220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 className="text-decoration-none"
                 target="_blank"
+                rel="noreferrer"
                 style={{ color: "#1E3050" }}
               >
                 <FontAwesomeIcon
@@ -96,6 +97,7 @@ const MainHero = () => {
                 href="https://x.com/OuniMoe?t=o158iJCgLFD0l76VdpADOw&s=09"
                 target="_blank"
                 className="text-decoration-none"
+                rel="noreferrer"
                 style={{ color: "#1E3050" }}
               >
                 <FontAwesomeIcon

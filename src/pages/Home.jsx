@@ -1,4 +1,3 @@
-import React from "react";
 import CraftHero from "../components/CraftHero";
 import MainHero from "../components/MainHero";
 import OfferHero from "../components/OfferHero";
