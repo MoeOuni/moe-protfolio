@@ -1,6 +1,6 @@
 const OfferHero = () => {
   return (
-    <div className="bg-light b-3-upside">
+    <div className=" b-3-upside">
       <div className="container px-4 py-5" id="hanging-icons">
         <h2 className="pb-2 border-bottom">What I Offer ✅</h2>
         <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">

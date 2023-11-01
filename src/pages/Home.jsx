@@ -1,3 +1,4 @@
+import AboutMeHero from "../components/AboutMeHero";
 import CraftHero from "../components/CraftHero";
 import MainHero from "../components/MainHero";
 import OfferHero from "../components/OfferHero";
@@ -9,6 +10,7 @@ const Home = () => {
       <div className="b-5">
         <MainHero />
       </div>
+      <AboutMeHero />
 
       <OfferHero />
 

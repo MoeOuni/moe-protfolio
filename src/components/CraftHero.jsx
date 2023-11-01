@@ -5,7 +5,7 @@ import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
 const CraftHero = () => {
   return (
-    <div className="bg-light b-3-downside">
+    <div className="b-3-downside">
       <div className="container px-4 py-5">
         <div className="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
           <div className="col-12 col-md-10 col-lg-7  ">

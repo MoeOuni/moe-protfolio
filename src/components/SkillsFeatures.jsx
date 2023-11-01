@@ -2,9 +2,9 @@ import SkillCard from "./SkillCard";
 
 const SkillsFeatures = () => {
   return (
-    <div>
+    <div className="bg-light">
       <div className="container px-4 py-5" id="hanging-icons">
-        <h2 className="pb-2 border-bottom">My Skills 🔧</h2>
+        <h2 className="pb-2 border-bottom">What I&apos;m Good At 🔧</h2>
         <div className="container row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-evenly">
           <SkillCard
             image={

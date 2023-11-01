@@ -55,16 +55,15 @@ const Main = () => {
               },
               {
                 label: (
-                  <Link to="#" className="text-decoration-none">
+                  <Link to="/about" className="text-decoration-none">
                     About
                   </Link>
                 ),
                 key: "/about",
               },
-
               {
                 label: (
-                  <Link to="#" className="text-decoration-none">
+                  <Link to="/services" className="text-decoration-none">
                     Services
                   </Link>
                 ),
@@ -72,7 +71,7 @@ const Main = () => {
               },
               {
                 label: (
-                  <Link to="#" className="text-decoration-none">
+                  <Link to="/craft" className="text-decoration-none">
                     Craft
                   </Link>
                 ),
@@ -80,7 +79,7 @@ const Main = () => {
               },
               {
                 label: (
-                  <Link to="#" className="text-decoration-none">
+                  <Link to="/contact" className="text-decoration-none">
                     Contact
                   </Link>
                 ),
@@ -96,8 +95,9 @@ const Main = () => {
           />
         </div>
       </Header>
-
-      <Outlet />
+      <div style={{ minHeight: "75vh" }}>
+        <Outlet />
+      </div>
       <LayoutFooter />
     </div>
   );

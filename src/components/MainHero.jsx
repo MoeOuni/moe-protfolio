@@ -9,8 +9,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Badge, Button, Image, Space } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const MainHero = () => {
+  const Navigate = useNavigate();
   return (
     <div className="container px-4 py-5">
       <div className="row flex-lg-row-reverse align-items-center py-5">
@@ -60,6 +62,9 @@ const MainHero = () => {
                 type="primary"
                 shape="round"
                 icon={<FontAwesomeIcon icon={faAnglesRight} />}
+                onClick={() => {
+                  Navigate("/about");
+                }}
               >
                 About Me
               </Button>
