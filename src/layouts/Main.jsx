@@ -77,14 +77,6 @@ const Main = () => {
                 ),
                 key: "/craft",
               },
-              {
-                label: (
-                  <Link to="/contact" className="text-decoration-none">
-                    Contact
-                  </Link>
-                ),
-                key: "/contact",
-              },
             ]}
             theme="light"
             style={{
