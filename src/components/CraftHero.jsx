@@ -5,8 +5,10 @@ import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 import { OverPack } from "rc-scroll-anim";
 import QueueAnim from "rc-queue-anim";
 import TextyAnim from "rc-texty";
+import { useNavigate } from "react-router";
 
 const CraftHero = () => {
+  const Navigate = useNavigate();
   return (
     <div className="b-3-downside" style={{ minHeight: "750px" }}>
       <OverPack className="container px-4 py-5">
@@ -42,6 +44,7 @@ const CraftHero = () => {
                 size="large"
                 type="primary"
                 icon={<FontAwesomeIcon icon={faAnglesRight} />}
+                onClick={() => Navigate("/craft")}
               >
                 Discover
               </Button>
