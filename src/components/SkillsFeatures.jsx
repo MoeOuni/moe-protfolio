@@ -1,11 +1,23 @@
 import SkillCard from "./SkillCard";
+import { OverPack } from "rc-scroll-anim";
+import QueueAnim from "rc-queue-anim";
+import TextyAnim from "rc-texty";
 
 const SkillsFeatures = () => {
   return (
-    <div className="bg-light">
-      <div className="container px-4 py-5" id="hanging-icons">
-        <h2 className="pb-2 border-bottom">What I&apos;m Good At 🔧</h2>
-        <div className="container row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-evenly">
+    <OverPack className="bg-light" style={{ minHeight: "470px" }}>
+      <QueueAnim key="queue" className="container px-4 py-5" id="hanging-icons">
+        <TextyAnim
+          component={"h2"}
+          key="queue-1"
+          className="pb-2 border-bottom"
+        >
+          What I&apos;m Good At 🔧
+        </TextyAnim>
+        <QueueAnim
+          key={"queue-452"}
+          className="container row g-4 py-5 row-cols-1 row-cols-lg-3"
+        >
           <SkillCard
             image={
               "https://res.cloudinary.com/dk1dqqqof/image/upload/v1688996381/5847f5c3cef1014c0b5e489d_zf6fyr.png"
@@ -78,9 +90,9 @@ const SkillsFeatures = () => {
             }
             name="Socket.io"
           />
-        </div>
-      </div>
-    </div>
+        </QueueAnim>
+      </QueueAnim>
+    </OverPack>
   );
 };
 

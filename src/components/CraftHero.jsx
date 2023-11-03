@@ -2,26 +2,42 @@ import craftThemes from "../assets/craft-themes.png";
 import { Button } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { OverPack } from "rc-scroll-anim";
+import QueueAnim from "rc-queue-anim";
+import TextyAnim from "rc-texty";
 
 const CraftHero = () => {
   return (
-    <div className="b-3-downside">
-      <div className="container px-4 py-5">
-        <div className="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
-          <div className="col-12 col-md-10 col-lg-7  ">
-            <img src={craftThemes} className=" img-fluid" alt="Moe Themes" />
-          </div>
-          <div className="col-lg-5 col-md-12">
-            <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+    <div className="b-3-downside" style={{ minHeight: "750px" }}>
+      <OverPack className="container px-4 py-5">
+        <QueueAnim
+          type={"right"}
+          key={"queue-2245"}
+          className="row flex-lg-row flex-column-reverse justify-content-center g-5 py-5"
+        >
+          {" "}
+          <QueueAnim key={"queue-3"} className="col-lg-5 col-md-12 pt-5">
+            <TextyAnim
+              type="bottom"
+              mode="sync"
+              key={"queue-91"}
+              component={"h1"}
+              className="display-5 fw-bold text-body-emphasis lh-1 mb-3"
+            >
               Discover Craft
-            </h1>
-            <p className="lead">
+            </TextyAnim>
+            <TextyAnim
+              type="bottom"
+              mode="sync"
+              key={"queue-52"}
+              className="lead"
+            >
               Celebrate the art of web development with my &lsquo;Discover
               Craft&rsquo; page. Explore a visual timeline of my MERN Stack
               journey, featuring captivating projects that showcase my passion
               for creating exceptional digital experiences.
-            </p>
-            <div>
+            </TextyAnim>
+            <div key={"queue-43"} className="mt-4">
               <Button
                 size="large"
                 type="primary"
@@ -30,9 +46,12 @@ const CraftHero = () => {
                 Discover
               </Button>
             </div>
+          </QueueAnim>
+          <div key={"queue-5"} className="col-12 col-md-12 col-lg-7">
+            <img src={craftThemes} className=" img-fluid" alt="Moe Themes" />
           </div>
-        </div>
-      </div>
+        </QueueAnim>
+      </OverPack>
     </div>
   );
 };

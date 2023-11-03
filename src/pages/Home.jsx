@@ -1,3 +1,4 @@
+import { FloatButton } from "antd";
 import AboutMeHero from "../components/AboutMeHero";
 import CraftHero from "../components/CraftHero";
 import MainHero from "../components/MainHero";
@@ -19,6 +20,7 @@ const Home = () => {
       </div>
 
       <CraftHero />
+      <FloatButton.BackTop type="primary" />
     </div>
   );
 };

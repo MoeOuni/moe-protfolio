@@ -1,10 +1,23 @@
+import { OverPack } from "rc-scroll-anim";
+import QueueAnim from "rc-queue-anim";
+import TextyAnim from "rc-texty";
+
 const OfferHero = () => {
   return (
-    <div className=" b-3-upside">
-      <div className="container px-4 py-5" id="hanging-icons">
-        <h2 className="pb-2 border-bottom">What I Offer ✅</h2>
-        <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div className="col d-flex align-items-start">
+    <OverPack className=" b-3-upside" style={{ minHeight: "480px" }}>
+      <QueueAnim key="queue" className="container px-4 py-5" id="hanging-icons">
+        <TextyAnim
+          component={"h2"}
+          key="queue-1"
+          className="pb-2 border-bottom"
+        >
+          What I Offer ✅
+        </TextyAnim>
+        <QueueAnim
+          key={"queue-2"}
+          className="row g-4 py-5 row-cols-1 row-cols-lg-3"
+        >
+          <div key={"queue-21"} className="col d-flex align-items-start">
             <div className="d-inline-flex align-items-center justify-content-center fs-3 px-2">
               🕒
             </div>
@@ -16,7 +29,7 @@ const OfferHero = () => {
               </p>
             </div>
           </div>
-          <div className="col d-flex align-items-start">
+          <div key={"queue-22"} className="col d-flex align-items-start">
             <div className="d-inline-flex align-items-center justify-content-center fs-3 px-2">
               ✨
             </div>
@@ -30,7 +43,7 @@ const OfferHero = () => {
               </p>
             </div>
           </div>
-          <div className="col d-flex align-items-start">
+          <div key={"queue-23"} className="col d-flex align-items-start">
             <div className="d-inline-flex align-items-center justify-content-center fs-3 px-2">
               🏢
             </div>
@@ -45,9 +58,9 @@ const OfferHero = () => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </QueueAnim>
+      </QueueAnim>
+    </OverPack>
   );
 };
 
