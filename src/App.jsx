@@ -8,7 +8,6 @@ import Home from "./pages/Home";
 import Craft from "./pages/Craft";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
-import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Resources from "./pages/Resources";
 
@@ -31,7 +30,6 @@ function App() {
             <Route path="craft" element={<Craft />} />
             <Route path="about" element={<About />} />
             <Route path="skills" element={<Skills />} />
-            <Route path="contact" element={<Contact />} />
             <Route path="services" element={<Services />} />
             <Route path="resources" element={<Resources />} />
           </Route>
