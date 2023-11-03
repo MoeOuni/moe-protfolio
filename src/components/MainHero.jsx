@@ -23,7 +23,7 @@ const MainHero = () => {
           className="col-lg-4 col-md-5 col-sm-12 d-flex justify-content-center p-4 dots-image"
         >
           <Image
-            className="rounded-5 shadow-lg"
+            className="rounded-3 shadow-lg"
             width={290}
             height={290}
             src="https://res.cloudinary.com/dk1dqqqof/image/upload/v1698784977/jihw3dccnhxmjzggqpsd.jpg"
