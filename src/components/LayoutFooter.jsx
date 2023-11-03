@@ -21,10 +21,10 @@ const LayoutFooter = () => {
               {
                 title: (
                   <span>
-                    <FontAwesomeIcon icon={faPhone} /> +216 55 512 924
+                    <FontAwesomeIcon icon={faPhone} /> +216 52 408 014
                   </span>
                 ),
-                url: "tel:+21655512924",
+                url: "tel:+21652408014",
                 openExternal: true,
               },
               {
