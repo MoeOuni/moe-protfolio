@@ -21,7 +21,7 @@ const Craft = () => {
           className="overflow-hidden d-flex justify-content-center"
           style={{ maxHeight: "35vh" }}
         >
-          <div className="col-lg-8 px-5">
+          <div className="col-lg-8 col-12 px-5">
             <Image
               src={cactusResume}
               className="img-fluid border rounded-3  mb-4"
@@ -52,7 +52,7 @@ const Craft = () => {
           className="overflow-hidden  d-flex justify-content-center"
           style={{ maxHeight: "35vh" }}
         >
-          <div className="container col-lg-8 px-5">
+          <div className="container col-lg-8 col-12 px-5">
             <Image
               src={humanResources}
               className="img-fluid border rounded-3  mb-4"
